@@ -1,0 +1,54 @@
+/*
+    File to hold generic styles
+    No component specific styles should be in this file.
+*/
+
+.jd {
+    // Fix font size on mobile device rotate
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+.jd-body {
+    line-height: 1;
+    min-width: 100%; /* 1 */
+    width: $min-page-width; /* 1 */
+    color: $jd-primary;
+    height: auto;
+    margin: 0;
+    padding: 0;
+
+    * {
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    sub {
+        vertical-align: sub;
+        font-size: smaller;
+    }
+
+    button[disabled]:hover {
+        cursor: no-drop;
+    }
+
+    #container {
+        position: relative;
+        min-height: 100vh;
+        margin: 0 auto;
+    }
+
+    .jd-figure {
+        margin: 0;
+        padding: 0;
+    }
+
+    .icon-alt-text {
+        @include visually-hidden();
+    }
+}

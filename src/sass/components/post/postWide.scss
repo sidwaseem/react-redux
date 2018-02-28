@@ -1,0 +1,25 @@
+.jd-post-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    max-width: 1280px;
+    margin: 0 auto;
+
+    .jd-post {
+        width: 50%;
+        padding: 0 10px 0 0;
+
+        &:nth-child(even) {
+            padding: 0 0 0 10px;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+            border: 0;
+        }
+    }
+}
+.jd-post-input-wrapper {
+    bottom: 0;
+}
+

@@ -1,0 +1,30 @@
+// Fonts size wide
+@mixin font-level-1() {
+    @include font-size($heading-wide-xxl, $line-height-xxl);
+    letter-spacing: $letter-spacing-xxl;
+}
+
+@mixin font-level-2() {
+    @include font-size($heading-wide-xl, $line-height-xl);
+    letter-spacing: $letter-spacing-m;
+}
+
+@mixin font-level-3() {
+    @include font-size($heading-wide-l, $line-height-l);
+    letter-spacing: $letter-spacing-m;
+}
+
+@mixin font-level-4() {
+    @include font-size($heading-wide-m, $line-height-l);
+    letter-spacing: $letter-spacing-m;
+}
+
+@mixin font-level-5() {
+    @include font-size($heading-wide-s, $line-height-s);
+    letter-spacing: $letter-spacing-m;
+}
+
+@mixin font-level-6() {
+    @include font-size($heading-narrow-xs, $line-height-xs);
+    letter-spacing: $letter-spacing-m;
+}

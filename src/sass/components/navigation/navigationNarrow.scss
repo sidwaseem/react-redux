@@ -1,0 +1,45 @@
+.jd-navigation-wrapper {
+    background-color: $jd-pink;
+    height: 60px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: $jd-secondary;
+    z-index: $zIndexNavigation;
+
+    .jd-navigation {
+        display: table;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    .jd-nav-item {
+        margin: 0;
+        padding: 0;
+        display: table-cell;
+        text-align: center;
+    }
+
+    a {
+        @include font-size($heading-narrow-xxl, $line-height-xxl);
+        color: $jd-secondary;
+        height: 60px;
+        text-align: center;
+        padding: 5px;
+        display: block;
+
+       span {
+           @include visually-hidden();
+       }
+
+       &:hover,
+       &:active,
+       &:focus,
+       &.active {
+           background-color: $jd-pink-dark;
+       }
+    }
+}
+

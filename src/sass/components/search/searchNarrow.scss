@@ -1,0 +1,62 @@
+.jd-search-wrapper {
+    position: relative;
+    background: $jd-pink-gradient;
+    background: linear-gradient(to bottom, $jd-pink-light 0%, $jd-pink-gradient 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=$jd-pink-light, endColorstr=$jd-pink-gradient, GradientType=0 );
+    height: 100vh;
+    width: 100%;
+    padding: 20px;
+    color: $jd-secondary;
+
+    .jd-search-input-wrapper {
+        min-height: 100px;
+        margin: 100px auto 50px auto;
+    }
+
+    .jd-search-header {
+        @include font-level-4();
+        font-weight: 100;
+        text-align: center;
+    }
+    .jd-search-input {
+        @include font-level-3();
+        font-weight: 100;
+        border-width: 0 0 1px 0;
+        border-color: $jd-secondary;
+        border-style: solid;
+        background: transparent;
+        padding: 10px;
+        color: $jd-secondary;
+        width: 100%;
+
+        @include input-placeholder {
+            color: $jd-secondary;
+        }
+
+        &:focus {
+            outline: 0;
+        }
+    }
+
+    .jd-search-content {
+        margin: 50px auto;
+        color: $jd-secondary;
+        text-align: center;
+    }
+
+    .jd-tags-wrapper {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+
+    .jd-tag-item {
+        @include font-size($body-narrow-m);
+        display: inline-block;
+        background: $jd-blue;
+        color: $jd-secondary;
+        border-radius: 50px;
+        padding: 10px 15px;
+        margin: 5px;
+    }
+}

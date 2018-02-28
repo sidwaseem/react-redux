@@ -1,0 +1,194 @@
+.jd-post-wrapper {
+    position: relative;
+}
+
+.jd-post {
+    display: block;
+    min-height: 50vh;
+    height: auto;
+    border-bottom: 1px solid $jd-grey;
+
+    &:after {
+        display: block;
+        content: '';
+        clear: both;
+    }
+
+    &:last-child {
+        margin-bottom: 60px;
+    }
+
+    .jd-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .jd-post-details {
+        position: relative;
+        max-height: 440px;
+
+        .jd-figure {
+            height: 300px;
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+
+        .jd-post-panel {
+            clear: both;
+            margin: 0 20px;
+            position: absolute;
+            z-index: $zIndexPost + 1;
+            transform: translateY(-100%);
+
+            .jd-post-heading {
+                @include font-level-4();
+                font-weight: 300;
+                letter-spacing: $letter-spacing-s;
+                color: $jd-secondary;
+                text-transform: capitalize;
+                margin-bottom: 5px;
+            }
+
+            .jd-post-price {
+                @include font-level-5();
+                font-weight: bold;
+                color: $jd-secondary;
+                margin-top: 0;
+            }
+        }
+
+        .jd-post-share {
+            clear: both;
+            margin: 0 10px 0 10px;
+            position: absolute;
+            z-index: $zIndexPost;
+            right: 0;
+            transform: translateY(-130%);
+            color: $jd-secondary;
+
+            .icon {
+                @include font-size($heading-narrow-xl);
+                color: $jd-secondary;
+                background-color: transparent;
+                height: 40px;
+                width: 40px;
+
+                &:hover {
+                    color: $jd-pink;
+                }
+            }
+        }
+
+    }
+}
+
+.jd-row {
+    display: flex;
+    flex-flow: row wrap;
+    flex-flow: 50%;
+    width: 100%;
+    color: $jd-blue;
+    min-height: 70px;
+    padding: 15px 20px;
+    border-bottom: 1px solid $jd-grey-border;
+    justify-content: space-between;
+
+}
+
+.jd-avatar {
+    @include font-level-5();
+    font-weight: bold;
+
+    img {
+        border-radius: 50px;
+        width: 50px;
+        height: 50px;
+        margin-right: 8px;
+        background-color: $jd-grey;
+        vertical-align: middle;
+    }
+}
+
+.jd-location {
+    @include font-level-5();
+    font-weight: normal;
+    color: $jd-grey-50;
+    line-height: 50px;
+}
+
+.jd-post-content-comments {
+    display: flex;
+    flex-flow: row nowrap;
+    margin-bottom: 30px;
+
+    .jd-description {
+        margin: 0;
+    }
+
+    .jd-tags {
+        font-weight: 500;
+    }
+}
+
+.jd-post-content {
+    @include font-body-m();
+    display: block;
+    margin: 20px;
+    color: $jd-grey-dark;
+    border-bottom: 1px solid $jd-grey;
+
+    &:last-child {
+        border: 0;
+    }
+
+    .jd-likes {
+        color: $jd-blue;
+        font-weight: bold;
+    }
+    .jd-tags {
+        color: $jd-blue;
+    }
+    .jd-view-button {
+        color: $jd-grey-50;
+        padding: 0;
+        background: transparent;
+    }
+}
+
+.jd-post-comments-wrapper {
+    margin-bottom: 80px;
+}
+
+.jd-post-input-wrapper {
+    position: fixed;
+    bottom: 60px;
+    z-index: $zIndexPost + 1;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-flow: row wrap;
+    border-top: 1px solid $jd-grey;
+    box-shadow: 0 0 24px 3px $jd-grey-50;
+    
+    .jd-post-input {
+        @include font-level-4();
+        font-weight: 100;
+        flex-grow: 1;
+        color: $jd-primary;
+        padding: 20px;    
+    }
+
+    .btn {
+        @include font-level-4();
+        border: 0;
+        background: $jd-pink;
+        height: 60px;
+        color: $jd-secondary;
+        width: 100px;
+
+        &:before {
+            @include font-size($heading-narrow-xl);
+        }
+    }
+}
+

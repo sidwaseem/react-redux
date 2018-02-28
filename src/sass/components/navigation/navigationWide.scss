@@ -1,0 +1,26 @@
+.jd-navigation-wrapper {
+    top: 0;
+    bottom: auto;
+
+    .jd-navigation {
+        margin: 0 auto;
+        max-width: 1024px;
+
+       a {
+            @include font-level-4();
+            padding: 15px 0;
+
+            &:before {
+                @include font-size($heading-narrow-m);
+                vertical-align: middle;
+            }
+
+            span {
+                @include visually-hidden-reset();
+                @include font-level-6();
+                margin-left: 10px;
+                text-transform: uppercase;
+            }
+       }
+    }
+}

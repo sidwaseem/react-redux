@@ -1,0 +1,18 @@
+@import "./core/normalize.scss";
+
+// Variables/Mixins
+@import "./core/_variables.scss";
+@import "./core/_colours.scss";
+@import "./core/_mixins.scss";
+@import "./core/_buttons.scss";
+@import "./core/fonts.scss";
+@import "./core/_fontFamily.scss";
+@import "./core/_fontsNarrow.scss";
+
+@import "./core/baseNarrow.scss";
+
+@import "./external/rcSlider.scss";
+// COMPONENTS
+@import "./components/navigation/navigationNarrow.scss";
+@import "./components/post/postNarrow.scss";
+@import "./components/search/searchNarrow.scss";

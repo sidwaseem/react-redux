@@ -1,0 +1,11 @@
+
+// Main file to include core styles and all components
+@import "core/_breakPointNarrow.scss";
+
+@media only screen and (min-width : $wide-break-point) {
+    @import "core/_breakPointWide.scss";
+}
+
+@media only screen and (min-width : $max-page-width) {
+    @import "core/_breakPointSuperWide.scss";
+}

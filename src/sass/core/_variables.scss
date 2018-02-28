@@ -1,0 +1,113 @@
+//
+// Variables
+// --------------------------------------------------
+
+	$min-page-width 		: 320px;
+	$wide-break-point 		: 768px;
+	$max-page-width 		: 1024px;
+
+// Default font-size and line-height values (value is based on stated value in px divided by 10)
+// ======================================================
+// Font sizes for Narrow and Wide view
+
+// ===================================
+// Font Size - Narrow
+// ===================================
+	$heading-narrow-xxl 	: 3;
+	$heading-narrow-xl 		: 2.4;
+	$heading-narrow-l 		: 2;
+	$heading-narrow-m 		: 1.8;
+	$heading-narrow-s 		: 1.4;
+	$heading-narrow-xs 		: 1.2;
+	$heading-narrow-xxs 	: 1;
+
+// ===================================
+// Font Size - Wide
+// ===================================
+	$heading-wide-xxl 		: 4.2;
+	$heading-wide-xl 		: 3;
+	$heading-wide-l 		: 2.4;
+	$heading-wide-m 		: 1.8;
+	$heading-wide-s 		: 1.4;
+	$heading-wide-xs 		: 1.2;
+	$heading-wide-xxs 		: 1;
+
+// ===================================
+// Body Text - Narrow
+// ===================================
+
+	$body-narrow-xl 		: 1.8;
+	$body-narrow-l 			: 1.6;
+	$body-narrow-m 			: 1.4;
+	$body-narrow-s 			: 1.1;
+	$body-narrow-xs 		: 1;
+
+// ===================================
+// Body Text - Wide
+// ===================================
+
+	$body-wide-xl 			: 1.8;
+	$body-wide-l 			: 1.6;
+	$body-wide-m 			: 1.4;
+	$body-wide-s 			: 1.2;
+	$body-wide-xs 			: 1;
+
+// ===================================
+//	Letter Spacing
+// ===================================
+
+	$letter-spacing-xxl 	: 2px;
+	$letter-spacing-xl 		: 1.6px;
+	$letter-spacing-m 		: 1px;
+	$letter-spacing-s 		: 0.5px;
+
+// ===================================
+// Line Height
+// ===================================
+
+	$line-height-xxl 		: 4.8;
+	$line-height-xl 		: 3.6;
+	$line-height-l 			: 2.1;
+	$line-height-m 			: 1.8;
+	$line-height-ms 		: 1.6;
+	$line-height-s 			: 1.4;
+	$line-height-xs 		: 1;
+
+// ===================================
+//	body text
+// ===================================
+	$body-line-height-l 	: 2.1;
+	$body-line-height-m 	: 1.8;
+	$body-line-height-s 	: 1.3;
+	$body-line-height-xs 	: 1;
+
+// ===================================
+// opacity
+// ===================================
+	$opaque-0				: 0;
+	$opaque-65				: 0.65;
+	$opaque-100				: 1;
+
+// ===================================
+// z-index
+// ===================================
+
+	$zIndexBase: 0;
+	$zIndexNavigation: 10;
+	$zIndexPost: 5;
+	
+
+// ===================================
+// icons
+// ===================================
+
+	$icons-path: "./fonts" !default;
+
+	$icon-home: "\e902";
+	$icon-camera: "\e90f";
+	$icon-compass: "\e949";
+	$icon-user: "\e971";
+	$icon-search: "\e986";
+	$icon-heart: "\e9da";
+	$icon-cross: "\ea0f";
+	$icon-share: "\ea82";

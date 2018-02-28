@@ -1,0 +1,43 @@
+// Fonts size Narrow
+@mixin font-level-1() {
+    @include font-family-jdpo-bold();
+    @include font-size($heading-narrow-xxl, $line-height-xxl);
+    letter-spacing: $letter-spacing-xxl;
+}
+
+@mixin font-level-2() {
+    @include font-family-jdpo-bold();
+    @include font-size($heading-narrow-xl, $line-height-xl);
+    letter-spacing: $letter-spacing-m;
+}
+
+@mixin font-level-3() {
+    @include font-family-jdpo-bold();
+    @include font-size($heading-narrow-l, $line-height-l);
+    letter-spacing: $letter-spacing-m;
+}
+
+@mixin font-level-4() {
+    @include font-family-jdpo-bold();
+    @include font-size($heading-narrow-m, $line-height-l);
+    letter-spacing: $letter-spacing-m;
+}
+
+@mixin font-level-5() {
+    @include font-family-jdpo-bold();
+    @include font-size($heading-narrow-s, $line-height-s);
+    letter-spacing: $letter-spacing-m;
+}
+
+@mixin font-level-6() {
+    @include font-family-jdpo-bold();
+    @include font-size($heading-narrow-xs, $line-height-xs);
+    letter-spacing: $letter-spacing-m;
+}
+
+@mixin font-body-m() {
+    @include font-family-jdpo();
+    @include font-size($body-narrow-m, $line-height-s);
+    line-height: $line-height-s;
+    letter-spacing: $letter-spacing-s;
+}

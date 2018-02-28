@@ -1,0 +1,24 @@
+// Buttons
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    font-weight: normal;
+    position: relative;
+    line-height: 1.5;
+    overflow: hidden;
+    padding: 5px 20px;
+    text-align: center;
+    vertical-align: middle;
+    touch-action: manipulation;
+    text-transform: uppercase;
+    white-space: nowrap; 
+}
+
+.btn-link {
+    border: 0;
+    border-radius: 0;
+    color: $jd-secondary;
+    cursor: pointer;
+    font-weight: normal;
+    padding: 0;
+}
